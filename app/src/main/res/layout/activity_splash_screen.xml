@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".SplashScreenActivity">
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="100dp"-->
+    <!--        android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+    <!--        android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+    <!--        android:background="@drawable/ets_logo">-->
+
+
+    <!--    </RelativeLayout>-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img_welcome"
+        android:layout_width="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="welcome.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/to"
+        style="@style/PageTitleTextStyle"
+        android:layout_below="@+id/img_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="To"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TitleTextLarge"
+        android:layout_below="@+id/to"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="20sp"
+        android:text="DEVA"/>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/doctor_id"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/title"
+        app:lottie_fileName="doctor.json"
+        app:lottie_loop="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/food_carousel_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="dot_preloader.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            style="@style/SubTitleTextStyle"
+            android:layout_below="@+id/food_carousel_id"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Doctor Enquiry &amp; View Appointment"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

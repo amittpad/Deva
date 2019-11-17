@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBlue_200">#90caf9</color>
+
+    <color name="color_gray200">#eeeeee</color>
+    <color name="color_gray600">#979191</color>
+    <color name="black_transparent">#99000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+
+    <color name="colorGreen">#4caf50</color>
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#E040FB</color>
+</resources>

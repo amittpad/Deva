@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Deva</string>
+    <string name="check_internet">Could not connect internet!</string>
+</resources>
